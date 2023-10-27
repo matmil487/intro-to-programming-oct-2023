@@ -1,17 +1,14 @@
 ﻿
-
-
 using Banking.Domain;
 
 namespace Banking.Tests;
 public class NewAccounts
 {
     [Fact]
-
     public void NewAccountsHaveCorrectOpeningBalance()
     {
-        // Write the code you wish you had
-        // Give I have a new account
+        // Write The Code You Wish You Had
+        // Given- I have a new account
         Account account = new Account();
 
         // when I ask it for it's balance
@@ -20,6 +17,6 @@ public class NewAccounts
 
         // then it is 5000 bucks. (decimal)
         Assert.Equal(5000M, openingBalance);
-    }
 
+    }
 }

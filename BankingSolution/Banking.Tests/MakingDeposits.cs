@@ -6,7 +6,7 @@ public class MakingDeposits
 {
 
     [Fact]
-    public void MakingDepositIncreaseBalance()
+    public void MakingADepositIncreasesBalance()
     {
         // Given
         var account = new Account();
@@ -15,6 +15,7 @@ public class MakingDeposits
 
         // when
         account.Deposit(amountToDeposit);
+
 
         // Then
         Assert.Equal(openingBalance + amountToDeposit, account.GetBalance());
